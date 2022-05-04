@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg'
+import '../sass/styles.css'
 
 function Header() {
   return (
@@ -8,14 +10,10 @@ function Header() {
         <img className="header__logo__img" src={logo} alt="logo" />
       </div>
 
-      <ul className="header__nav">
-        <li className="header__nav__home">
-          <a href="#">Accueil</a>
-        </li>
-        <li className="header__nav__about">
-          <a href="#">A propos</a>
-        </li>
-      </ul>
+      <nav className="header__nav">
+        <Link to="/" className="header__nav__home">Accueil</Link>
+        <Link to="/about" className="header__nav__about">A propos</Link>
+      </nav>
     </div>
   );
 }
