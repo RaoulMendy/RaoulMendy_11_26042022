@@ -1,3 +1,4 @@
+import React from 'react';
 import "../sass/styles.css"
 import data from "../datas/logements.json";
 
