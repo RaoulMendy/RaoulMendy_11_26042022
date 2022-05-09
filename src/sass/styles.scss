@@ -5,6 +5,8 @@
 @import "./components/Gallery";
 @import "./components/Thumbnail";
 @import "./components/Footer";
+@import "./components/Dropdown";
+@import "./components/Error";
 
 body {
     margin: 0;
@@ -35,7 +37,7 @@ body {
   }
 
   @media screen and (max-width: 860px) { 
-    .gallery, .banner, .header {
+    .header, .gallery, .banner {
       @include margin-M;
     }
     
@@ -55,11 +57,11 @@ body {
   
   @media screen and (max-width: 400px) {
     .header {
+      margin: 0;
      
       &__nav {
         text-transform: uppercase;
         font-size: 0.7em;
       }
     }
-    
   }

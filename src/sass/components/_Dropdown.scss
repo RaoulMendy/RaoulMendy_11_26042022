@@ -1,0 +1,29 @@
+.dropdown {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: justify;
+
+    &__header {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ff6060;
+        border-radius: 5px;
+        font-weight: bolder;
+        color: white;
+      }
+
+      &__content {
+        color: #ff6060;
+        padding: 15px;
+      }
+  }
+
+  .fa.fa-chevron-up:hover {
+    transform: rotate(180deg);
+  }
+  
+  
+
+
+  

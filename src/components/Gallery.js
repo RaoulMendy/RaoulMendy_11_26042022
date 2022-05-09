@@ -1,30 +1,17 @@
 import React from 'react';
-import Thumbnail from "./Thumbnail";
+import Card from './Card';
 
 function Gallery() {
     return (
         <div className="gallery">
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
-            <Thumbnail/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
     )
-
 }
 
 export default Gallery;
