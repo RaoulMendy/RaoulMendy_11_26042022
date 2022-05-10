@@ -2,11 +2,13 @@
 @import "./utils/mixins";
 @import "./components/Header";
 @import "./components/Banner";
-@import "./components/Gallery";
-@import "./components/Thumbnail";
 @import "./components/Footer";
+@import "./components/Cards";
+@import "./components/Carroussel";
 @import "./components/Dropdown";
 @import "./components/Error";
+@import "./components/Tag";
+@import "./components/Host";
 
 body {
     margin: 0;
@@ -30,7 +32,7 @@ body {
     .gallery {
       grid-template-columns: repeat(2, 1fr);
     }
-    .thumbnail{
+    .card {
       height: 255px;
     }
 
@@ -64,4 +66,13 @@ body {
         font-size: 0.7em;
       }
     }
+  }
+
+
+  .about-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    @include margin-D;
+    
   }

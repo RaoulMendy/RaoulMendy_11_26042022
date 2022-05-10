@@ -1,9 +1,8 @@
 import React from 'react';
-import Header from "../Header";
 import Banner from "../Banner";
 import Footer from "../Footer";
-import Gallery from "../Gallery";
-
+import Cards from '../Cards';
+import backgroundOne from "../../assets/banner.png"
 
 
 
@@ -11,9 +10,8 @@ function Home() {
 
   return (
     <div className="Home">
-      <Header/>
-      <Banner/>
-      <Gallery/>
+      <Banner backgroundValue={backgroundOne}/>
+      <Cards/>
       <Footer/>
     </div>
   );

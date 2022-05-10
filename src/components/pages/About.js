@@ -1,23 +1,15 @@
 import React from 'react';
-import Header from "../Header";
 import Footer from "../Footer";
 import Banner from '../Banner';
-import Dropdown from '../Dropdown';
-
-
-
-
+import backgroundTwo from "../../assets/banner-about.png"
+import BodyAbout from '../../components/BodyAbout';
 
 function About() {
 
   return (
-    <div className="About">
-      <Header/>
-      <Banner/>
-      <Dropdown/>
-      <Dropdown/>
-      <Dropdown/>
-      <Dropdown/>
+    <div className="about">
+      <Banner backgroundValue={backgroundTwo}/>
+      <BodyAbout/>
       <Footer/>
     </div>
   );

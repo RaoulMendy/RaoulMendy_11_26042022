@@ -1,14 +1,20 @@
 import React from "react";
-import Header from "../Header";
-import Banner from "../Banner";
-// import Dropdown from "../Dropdown";
+import { useParams } from "react-router-dom";
+import Carrousel from "../Carrousel";
+
+// import BodyLocation from "../BodyLocation";
+
+
+
 
 function Location() {
-  return (
-    <div className="Home">
-      <Header />
+  const {id} = useParams();
 
-      <Banner />
+  
+  return (
+    <div className="Location">
+      <Carrousel/>
+      <h1>{id}</h1>
     </div>
   );
 }

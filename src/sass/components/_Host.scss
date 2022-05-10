@@ -1,0 +1,17 @@
+.host {
+    display: flex;
+    align-items: center;
+    color:$primary-color;
+    font-size: 18px;
+    width: 200px;
+    border: 2px solid #000000;
+
+    &__picture {
+    
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: #575151;    
+    }
+}
