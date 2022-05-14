@@ -1,21 +1,15 @@
 .banner {
     @include margin-D;
     @include background-cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     height: 223px;
     border-radius: 25px;
 
    
-
-    &__img {
-        border-radius: 25px;
-        
-    }
     &__motto {
         position: absolute;
         color: white;
-        font-size: 4vw;
     }
+    
+
 }

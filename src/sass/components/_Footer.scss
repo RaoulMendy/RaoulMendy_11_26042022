@@ -1,11 +1,9 @@
 .footer {
+	@include center;
+	flex-direction: column;
 	height: 209px;
 	color: white;
     background-color: black;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
 	
 
     &__logo {
@@ -17,8 +15,6 @@
     }
 
 	&__copyright {
-		font-weight: medium;
-		font-size: 1em;
 		margin-top: 50px;
 	}
 }

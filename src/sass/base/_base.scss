@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+  }
+
+  a {
+    text-decoration: none;
+    color: unset;
+    font-weight: unset;
+  }
+  
+  .card .error-section__redirection {
+      font-size: 18px;
+    }
+
+  .header .footer .stars .dropdown {
+      font-size: 24px;
+    
+  }
+
+  .error-section__message {
+      font-size: 36px;
+  }
+  
+  .banner {
+        font-size: 48px;
+    }
+
+    .error-section__number {
+        font-size: 288px;
+        font-weight: bold;
+    }
+

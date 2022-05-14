@@ -8,7 +8,7 @@ function About() {
 
   return (
     <div className="about">
-      <Banner backgroundValue={backgroundTwo}/>
+      <Banner backgroundValue={backgroundTwo} motto=""/>
       <BodyAbout/>
       <Footer/>
     </div>

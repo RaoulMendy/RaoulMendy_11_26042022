@@ -6,6 +6,12 @@
 
 }
 
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin margin-D {
     margin: 100px;
     margin-bottom: 45px;

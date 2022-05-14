@@ -1,0 +1,12 @@
+.carousel {
+    position: relative;
+    @include center;
+    height: 415px;
+    background-color: grey;
+    
+    &__image {
+        border-radius: 25px;
+        height: 643px;
+        width: 80%;
+    }
+}

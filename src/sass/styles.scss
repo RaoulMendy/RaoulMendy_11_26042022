@@ -1,31 +1,19 @@
+
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./base/base";
+@import "./base/typography";
 @import "./components/Header";
 @import "./components/Banner";
 @import "./components/Footer";
 @import "./components/Cards";
-@import "./components/Carroussel";
+@import "./components/Carousel";
 @import "./components/Dropdown";
 @import "./components/Error";
 @import "./components/Tag";
 @import "./components/Host";
 
-body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  
-  }
 
-  a {
-    text-decoration: none;
-    color: unset;
-    font-weight: unset;
-  }
 
   @media screen and (max-width: 1200px) { 
 
@@ -75,4 +63,8 @@ body {
     row-gap: 30px;
     @include margin-D;
     
+  }
+
+  .location__body {
+    @include margin-D;
   }

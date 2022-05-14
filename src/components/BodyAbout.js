@@ -14,6 +14,6 @@ function BodyAbout() {
     ))}
     </div>
   );
-}
+} 
 
 export default BodyAbout;

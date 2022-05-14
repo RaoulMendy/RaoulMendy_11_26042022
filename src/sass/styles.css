@@ -1,3 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: unset;
+}
+
+.card .error-section__redirection {
+  font-size: 18px;
+}
+
+.header .footer .stars .dropdown {
+  font-size: 24px;
+}
+
+.error-section__message {
+  font-size: 36px;
+}
+
+.banner {
+  font-size: 48px;
+}
+
+.error-section__number {
+  font-size: 288px;
+  font-weight: bold;
+}
+
 .header {
   margin: 100px;
   margin-bottom: 45px;
@@ -34,7 +71,6 @@
   -webkit-column-gap: 15px;
           column-gap: 15px;
   text-align: center;
-  font-size: 1em;
 }
 
 .header__nav a:hover {
@@ -61,33 +97,28 @@
   border-radius: 25px;
 }
 
-.banner__img {
-  border-radius: 25px;
-}
-
 .banner__motto {
   position: absolute;
   color: white;
-  font-size: 4vw;
 }
 
 .footer {
-  height: 209px;
-  color: white;
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 209px;
+  color: white;
+  background-color: black;
 }
 
 .footer__logo {
@@ -100,8 +131,6 @@
 }
 
 .footer__copyright {
-  font-weight: medium;
-  font-size: 1em;
   margin-top: 50px;
 }
 
@@ -138,13 +167,11 @@
   font-weight: normal;
 }
 
-.carrousel {
-  margin: 100px;
-  margin-bottom: 45px;
+.carousel {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: aqua;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -152,7 +179,13 @@
       -ms-flex-align: center;
           align-items: center;
   height: 415px;
+  background-color: grey;
+}
+
+.carousel__image {
   border-radius: 25px;
+  height: 643px;
+  width: 80%;
 }
 
 .dropdown {
@@ -172,7 +205,6 @@
           justify-content: space-between;
   background-color: #ff6060;
   border-radius: 5px;
-  font-weight: bolder;
   color: white;
 }
 
@@ -191,41 +223,38 @@
   width: 100%;
 }
 
-.error-section__number {
-  font-size: 6em;
-}
-
-.error-section__message {
-  font-size: 2em;
-}
-
-.error-section__redirection {
-  font-size: 1em;
-}
-
 .error-section__redirection:hover {
   text-decoration: underline;
 }
 
-.tab-box {
-  padding: 15px;
-}
-
-.tag {
-  background-color: #ff6060;
+.tag-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 115px;
   height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  color: white;
 }
 
 .host {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #ff6060;
-  font-size: 18px;
   width: 200px;
   border: 2px solid #000000;
 }
@@ -237,21 +266,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #575151;
-}
-
-body {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-  font-weight: unset;
 }
 
 @media screen and (max-width: 1200px) {
@@ -297,6 +311,11 @@ a {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   row-gap: 30px;
+  margin: 100px;
+  margin-bottom: 45px;
+}
+
+.location__body {
   margin: 100px;
   margin-bottom: 45px;
 }

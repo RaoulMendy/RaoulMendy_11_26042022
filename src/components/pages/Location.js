@@ -1,22 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Carrousel from "../Carrousel";
-
-// import BodyLocation from "../BodyLocation";
-
-
+import ActivePage from "../ActivePage";
+import datas from "../../datas/logements.json"
 
 
 function Location() {
   const {id} = useParams();
-
+  console.log(id);
   
   return (
-    <div className="Location">
-      <Carrousel/>
-      <h1>{id}</h1>
+    <div>
+      <ActivePage active={id}/>
     </div>
   );
 }
 
 export default Location;
+

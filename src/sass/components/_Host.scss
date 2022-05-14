@@ -1,8 +1,6 @@
 .host {
-    display: flex;
-    align-items: center;
+    @include center;
     color:$primary-color;
-    font-size: 18px;
     width: 200px;
     border: 2px solid #000000;
 

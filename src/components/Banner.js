@@ -1,13 +1,12 @@
-import React from 'react';
-
-
-function Banner(props) {
-
-  const backgroundValue = props.backgroundValue
-  
+function Banner({ backgroundValue, motto }) {
   return (
-    <div className="banner" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(${backgroundValue})`}}>
-      <div className="banner__motto">Chez vous, partout et ailleurs</div>
+    <div
+      className="banner"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundValue})`,
+      }}
+    >
+      <div className="banner__motto">{`${motto}`}</div>
     </div>
   );
 }
