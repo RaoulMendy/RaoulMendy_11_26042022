@@ -1,23 +1,37 @@
-import {useState} from 'react'
+import { useState } from "react";
 
-function Dropdown({ titre, texte}) {
+function Dropdown({ titre, texte, type, description, equipments, typeList }) {
+  const [expand, setExpand] = useState(true);
+  const toggleExpand = () => setExpand((prevExpand) => !prevExpand);
 
-  function handleClick(e) {
-      console.log('✨ Ceci est mon event :', e)
-      e.preventDefault();
-      e.target.style.backgroundColor = "black";
+
+  if (type !== "locationList") {
+    return (
+      <div className="dropdown">
+        <div className="dropdown__header" onClick={toggleExpand}>
+          {titre}
+          <span className="dropdown__header__icon">
+            <i
+              className={expand ? "fa fa-chevron-up" : "fa fa-chevron-down"}
+            ></i>
+          </span>
+        </div>
+        {expand && <div className="dropdown__content">{texte}</div>}
+      </div>
+    );
   }
 
   return (
- 
     <div className="dropdown">
-      <div className="dropdown__header" onClick={handleClick}>
-        {titre}
+      <div className="dropdown__header" onClick={toggleExpand}>
+        {typeList}
         <span className="dropdown__header__icon">
-          <i className="fa fa-chevron-up"></i>
+          <span
+            className={expand ? "fa fa-chevron-up" : "fa fa-chevron-down"}
+          ></span>
         </span>
       </div>
-      <div className="dropdown__content">{texte}</div>
+      {expand && <div className="dropdown__content">{description}</div>}
     </div>
   );
 }

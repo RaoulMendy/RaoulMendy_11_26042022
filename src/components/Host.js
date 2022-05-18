@@ -1,10 +1,10 @@
-function Host() {
-    return (
-        <div className="host">
-            <div className="host__name">Alexandre Dumas</div>
-            <div className="host__picture"></div>
-        </div>
-    )
+function Host({ host }) {
+  return (
+    <div className="host">
+      <div className="host__name">{host.name}</div>
+      <img src={host.picture} alt={host.name} className="host__picture" />
+    </div>
+  );
 }
 
-export default Host
+export default Host;

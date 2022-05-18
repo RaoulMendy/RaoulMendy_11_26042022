@@ -1,5 +1,15 @@
 .tag-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    // font-size: 12px;
+    font-size: 0.6em;
+    padding: 0;
+    color: white;
+}
+.tag {
     @include center;
+    padding: 10px;
     width: 115px;
     height: 25px;
     border-radius: 10px;

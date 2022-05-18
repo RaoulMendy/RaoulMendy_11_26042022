@@ -1,0 +1,13 @@
+.about-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    @include margin-D;
+  
+  }
+
+  @media screen and (max-width: 860px) { 
+    .about-box {
+        @include margin-M;
+      }
+    }

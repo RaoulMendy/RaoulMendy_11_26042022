@@ -1,4 +1,3 @@
-
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
@@ -6,37 +5,47 @@
 @import "./components/Header";
 @import "./components/Banner";
 @import "./components/Footer";
+@import "./pages/Location";
+@import "./pages/About";
+@import "./pages/Error";
 @import "./components/Cards";
 @import "./components/Carousel";
 @import "./components/Dropdown";
-@import "./components/Error";
 @import "./components/Tag";
 @import "./components/Host";
+@import "./components/Rating";
 
+@media screen and (max-width: 1200px) { 
+  
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: 255px;
+  }
+}
 
-
-  @media screen and (max-width: 1200px) { 
-
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .card {
-      height: 255px;
-    }
-
+@media screen and (max-width: 860px) { 
+  .header, .gallery, .banner {
+    @include margin-M;
   }
 
-  @media screen and (max-width: 860px) { 
-    .header, .gallery, .banner {
-      @include margin-M;
-    }
-    
-    .gallery {
-      background-color: white;
-      padding: 0;
-    }
+  .dropdown-box {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    margin-top: 50px;
+    width: 100%
   }
   
+  
+  .gallery {
+    background-color: white;
+    padding: 0;
+    }
+  }
+
   @media screen and (max-width: 599px) {
 
     
@@ -56,15 +65,3 @@
     }
   }
 
-
-  .about-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-    @include margin-D;
-    
-  }
-
-  .location__body {
-    @include margin-D;
-  }

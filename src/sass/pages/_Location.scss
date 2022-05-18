@@ -1,0 +1,62 @@
+.location {
+  @include margin-D;
+}
+.location-info {
+    display: flex;
+    flex-wrap: wrap;
+    color: $primary-color;
+  }
+
+  .block1 {
+   width: 80%;
+  }
+  
+  .block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+  }
+  
+  .dropdown-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 50px;
+    width: 100%
+  }
+
+
+ @media screen and (max-width: 860px) { 
+
+    .location {
+        @include margin-M;
+      }
+      .location-info {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          color: $primary-color;
+        }
+      
+        .block1 {
+         width: 100%;
+        }
+        
+        .block2 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .dropdown-box {
+          display: flex;
+          flex-direction: column;
+          column-gap: 30px;
+          margin-top: 50px;
+          width: 100%
+        }
+   
+    }

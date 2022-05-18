@@ -1,8 +1,11 @@
-function Tag() {
+function Tag({tags}) {
+
     return (
-        <div className="tag-box">
-            <div className="tag">Tag</div>
-        </div>
+        <ul className="tag-box">
+            {tags.map((tag) => (
+                <li className="tag" key={tag}>{tag}</li>
+            ))}
+        </ul>
     )
 }
 

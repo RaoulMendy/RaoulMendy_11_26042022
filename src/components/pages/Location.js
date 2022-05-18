@@ -1,19 +1,49 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ActivePage from "../ActivePage";
-import datas from "../../datas/logements.json"
-
+import Carousel from "../Carousel";
+import Description from "../Description";
+import datas from "../../datas/logements.json";
 
 function Location() {
-  const {id} = useParams();
-  console.log(id);
-  
+  const { id } = useParams();
+
+  const activeLocation = datas.filter(function (location) {
+    return location.id === id;
+  });
+
+  console.log(activeLocation)
+
   return (
-    <div>
-      <ActivePage active={id}/>
+    <div className="location">
+      {activeLocation.map(
+        ({
+          description,
+          equipments,
+          host,
+          id,
+          location,
+          pictures,
+          rating,
+          tags,
+          title,
+        }) => (
+          <div key={`description-${id}`}>
+            <Carousel pictures={pictures} />
+            <Description
+              description={description}
+              equipments={equipments}
+              host={host}
+              id={id}
+              location={location}
+              rating={rating}
+              tags={tags}
+              title={title}
+            />
+          </div>
+        )
+      )}
     </div>
   );
 }
 
 export default Location;
-

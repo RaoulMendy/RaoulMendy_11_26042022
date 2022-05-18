@@ -15,22 +15,38 @@ body {
     color: unset;
     font-weight: unset;
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+
+
+  h1, p {
+    margin: 5px;
+
+
+  }
   
-  .card .error-section__redirection {
-      font-size: 18px;
+  .card .location-info__location .error-section__redirection {
+      // font-size: 18px;
+      font-size: 1em;
     }
 
   .header .footer .stars .dropdown {
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: 1.5em;
     
   }
 
-  .error-section__message {
-      font-size: 36px;
+  .location-info__title .error-section__message {
+      // font-size: 36px;
+      font-size: 2.2em;
   }
   
   .banner {
-        font-size: 48px;
+        // font-size: 48px;
+        font-size: 2.5em;
     }
 
     .error-section__number {

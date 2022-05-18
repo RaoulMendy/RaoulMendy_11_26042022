@@ -4,7 +4,7 @@ import data from "../datas/logements.json";
 
 function Cards() {
   return (
-    <ul className="gallery">
+    <div className="gallery">
       {data.map((element) => (
         <Link to={`/location/${element.id}`}
           key={element.id}
@@ -16,7 +16,7 @@ function Cards() {
           <div className="card__title">{`${element.title}`}</div>
         </Link>
       ))}
-    </ul>
+    </div>
   );
 }
 
