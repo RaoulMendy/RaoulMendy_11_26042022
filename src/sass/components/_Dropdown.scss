@@ -7,17 +7,17 @@
       padding: 15px;
       display: flex;
       justify-content: space-between;
-      background-color: #ff6060;
+      background-color: $primary;
       border-radius: 5px;
       color: white;
     }
     
     &__content {
       
-      color: #ff6060;
+      color: $primary;
       padding: 15px;
-      background-color: #f2f2f2;
-      // height: 130px;
+      background-color: $bgc-grey;
+
         
       }
   }

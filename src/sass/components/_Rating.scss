@@ -1,4 +1,8 @@
 .rating {
     display: flex;
     justify-content: flex-end;
+
+    &__star-empty {
+        color: #c3c3c3;
+    }
 }

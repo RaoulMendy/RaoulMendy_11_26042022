@@ -1,7 +1,7 @@
 .host {
     @include center;
     justify-content: flex-end;
-    color:$primary-color;
+    color:$primary;
 
     &__picture {
         width: 64px;

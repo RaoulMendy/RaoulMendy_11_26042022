@@ -1,11 +1,17 @@
+import Star from "../assets/star_rate_filled.svg";
+import StarEmpty from "../assets/star_rate_empty.svg";
 function Rate({ rating }) {
-  console.log(rating)
+  const range = [1, 2, 3, 4, 5];
 
-  
   return (
     <div className="rating">
-      <span className="fa fa-star checked"></span>
-      <span className="fa fa-star unchecked"></span>
+      {range.map((rangeStep) =>
+        rating >= rangeStep ? (
+          <img key={rangeStep} src={Star} alt="star" className="star" />
+        ) : (
+          <img key={rangeStep} src={StarEmpty} alt="star-empty" className="star" />
+        )
+      )}
     </div>
   );
 }

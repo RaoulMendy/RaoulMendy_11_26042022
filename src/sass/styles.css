@@ -375,7 +375,7 @@ ul, li {
 .dropdown__content {
   color: #ff6060;
   padding: 15px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
 }
 
 .tag-box {
@@ -388,7 +388,7 @@ ul, li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 0.6em;
-  padding: 0;
+  padding: 5px;
   color: white;
 }
 
@@ -444,6 +444,10 @@ ul, li {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.rating__star-empty {
+  color: #c3c3c3;
 }
 
 @media screen and (max-width: 1200px) {

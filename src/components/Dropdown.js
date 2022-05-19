@@ -42,4 +42,6 @@ function Dropdown({ titre, texte, type, description, equipments, typeListName })
   );
 }
 
+
+
 export default Dropdown;
