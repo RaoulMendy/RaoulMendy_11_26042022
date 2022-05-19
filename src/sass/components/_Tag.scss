@@ -9,7 +9,9 @@
 }
 .tag {
     @include center;
-    padding: 10px;
+    margin-right: 5px;
+    margin-block: 5px;
+    padding: 5px;
     width: 115px;
     height: 25px;
     border-radius: 10px;
@@ -17,3 +19,9 @@
     color: white;
 }
 
+// .tag {
+//     width: 115px;
+//     height: 25px;
+//     font-size: 0.7em;
+
+// }

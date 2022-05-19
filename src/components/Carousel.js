@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 
 function Carousel({ pictures }) {
   const [current, setCurrent] = useState(0);
-  const length = pictures.length;
 
   const nextSlide = () => {
     setCurrent(current === pictures.length - 1 ? 0 : current + 1);
@@ -12,8 +11,6 @@ function Carousel({ pictures }) {
   const prevSlide = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1);
   };
-
-
 
   return (
     <div className="carousel">

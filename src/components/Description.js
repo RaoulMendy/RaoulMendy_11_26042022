@@ -24,8 +24,8 @@ function Description({
         <Rate rating={rating} />
       </div>
       <div className="dropdown-box">
-        <Dropdown description={description} type='locationList' typeList="Description" />
-        <Dropdown description={equipments} type='locationList' typeList="Equipements" />
+        <Dropdown type='locationList' typeListName="Description" description={description} />
+        <Dropdown type='locationList' typeListName="Equipements" equipments={equipments} />
       </div>
     </div>
   );

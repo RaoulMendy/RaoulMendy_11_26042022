@@ -22,6 +22,12 @@ h1, p {
   margin: 5px;
 }
 
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .card .location-info__location .error-section__redirection {
   font-size: 1em;
 }
@@ -299,7 +305,7 @@ h1, p {
 
 .carousel {
   position: relative;
-  height: 643px;
+  height: 415px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +355,6 @@ h1, p {
 
 .dropdown {
   border-radius: 5px;
-  background-color: #f2f2f2;
   text-align: justify;
   margin-bottom: 15px;
 }
@@ -370,6 +375,7 @@ h1, p {
 .dropdown__content {
   color: #ff6060;
   padding: 15px;
+  background-color: #f2f2f2;
 }
 
 .tag-box {
@@ -396,7 +402,9 @@ h1, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  margin-right: 5px;
+  margin-block: 5px;
+  padding: 5px;
   width: 115px;
   height: 25px;
   border-radius: 10px;

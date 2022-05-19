@@ -1,37 +1,43 @@
 import { useState } from "react";
+import Equipments from "./Equipments";
 
-function Dropdown({ titre, texte, type, description, equipments, typeList }) {
-  const [expand, setExpand] = useState(true);
-  const toggleExpand = () => setExpand((prevExpand) => !prevExpand);
+function Dropdown({ titre, texte, type, description, equipments, typeListName }) {
+  const [collapse, setCollapse] = useState(true);
+  const toggleCollapse = () => setCollapse((prevExpand) => !prevExpand);
+  const rightList = typeListName === "Description" ? <div>{description}</div> : <Equipments equipments={equipments}/>;
 
-
+  
+  
+  
   if (type !== "locationList") {
     return (
       <div className="dropdown">
-        <div className="dropdown__header" onClick={toggleExpand}>
+        <div className="dropdown__header" onClick={toggleCollapse}>
           {titre}
           <span className="dropdown__header__icon">
             <i
-              className={expand ? "fa fa-chevron-up" : "fa fa-chevron-down"}
-            ></i>
+              className={collapse ? "fa fa-chevron-up" : "fa fa-chevron-down"}
+              ></i>
           </span>
         </div>
-        {expand && <div className="dropdown__content">{texte}</div>}
+        {collapse && <div className="dropdown__content">{texte}</div>}
       </div>
+
     );
   }
 
   return (
     <div className="dropdown">
-      <div className="dropdown__header" onClick={toggleExpand}>
-        {typeList}
+      <div className="dropdown__header" onClick={toggleCollapse}>
+        {typeListName}
         <span className="dropdown__header__icon">
           <span
-            className={expand ? "fa fa-chevron-up" : "fa fa-chevron-down"}
+            className={collapse ? "fa fa-chevron-up" : "fa fa-chevron-down"}
           ></span>
         </span>
       </div>
-      {expand && <div className="dropdown__content">{description}</div>}
+      {collapse &&
+      <div className="dropdown__content">{rightList}</div>}
     </div>
   );
 }
