@@ -28,15 +28,15 @@ ul, li {
   margin: 0;
 }
 
-.card .location-info__location .error-section__redirection {
+.card, .dropdown, .location-info__location, .error-section__redirection {
   font-size: 1em;
 }
 
-.header .footer .stars .dropdown {
+.header, .footer {
   font-size: 1.5em;
 }
 
-.location-info__title .error-section__message {
+.location-info__title, .error-section__message {
   font-size: 2.2em;
 }
 
@@ -47,6 +47,24 @@ ul, li {
 .error-section__number {
   font-size: 288px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 860px) {
+  .location-info__location, .error-section__redirection {
+    font-size: 0.875em;
+  }
+  .header, .footer, .dropdown {
+    font-size: 0.75em;
+  }
+  .location-info__title, h1, .error-section__message {
+    font-size: 1.125em;
+  }
+  .banner {
+    font-size: 1.5em;
+  }
+  .error-section__number {
+    font-size: 6em;
+  }
 }
 
 .header {
@@ -257,13 +275,28 @@ ul, li {
 }
 
 .error-section {
-  display: -ms-grid;
-  display: grid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  -ms-grid-row: 1;
-  grid-row: 1fr;
   color: #ff6060;
+  height: 80vh;
   width: 100%;
+}
+
+.error-section__message {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  top: 50%;
 }
 
 .error-section__redirection:hover {
@@ -360,7 +393,7 @@ ul, li {
 }
 
 .dropdown__header {
-  padding: 15px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +420,7 @@ ul, li {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 0.6em;
+  font-size: 0.875em;
   padding: 5px;
   color: white;
 }
@@ -412,6 +445,14 @@ ul, li {
   color: white;
 }
 
+@media screen and (max-width: 480px) {
+  .tag {
+    width: 84px;
+    height: 18px;
+    font-size: 0.625em;
+  }
+}
+
 .host {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,6 +467,7 @@ ul, li {
       -ms-flex-pack: end;
           justify-content: flex-end;
   color: #ff6060;
+  font-size: 1.125em;
 }
 
 .host__picture {
@@ -435,6 +477,12 @@ ul, li {
   -o-object-fit: cover;
      object-fit: cover;
   padding: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .host__name {
+    font-size: 0.75em;
+  }
 }
 
 .rating {
@@ -448,6 +496,12 @@ ul, li {
 
 .rating__star-empty {
   color: #c3c3c3;
+}
+
+@media screen and (max-width: 480px) {
+  .star {
+    width: 18px;
+  }
 }
 
 @media screen and (max-width: 1200px) {

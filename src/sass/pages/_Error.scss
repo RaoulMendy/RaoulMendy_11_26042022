@@ -1,17 +1,26 @@
 .error-section {
-    display: grid;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     text-align: center;
-    grid-row: 1fr;
     color: $primary;
+    height: 80vh;
     width: 100%;
     
     // &__number {
+
        
     // }
-    // &__message {
+    &__message {
+        position: absolute;
+        padding: 20px;
+        width: 100%;
+        top: 50%;
+    
 
  
-    // }
+    }
     &__redirection {
 
       

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Carousel from "../Carousel";
 import Description from "../Description";
 import datas from "../../datas/logements.json";
@@ -10,6 +10,12 @@ function Location() {
   const activeLocation = datas.filter(function (location) {
     return location.id === id;
   });
+  
+
+  const navigate = useNavigate();
+  if (activeLocation === undefined) {
+    navigate("/error")
+  }
 
   console.log(activeLocation)
 

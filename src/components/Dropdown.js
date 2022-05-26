@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Equipments from "./Equipments";
 
 function Dropdown({ titre, texte, type, description, equipments, typeListName }) {

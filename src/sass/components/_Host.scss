@@ -2,6 +2,7 @@
     @include center;
     justify-content: flex-end;
     color:$primary;
+    font-size: 1.125em;
 
     &__picture {
         width: 64px;
@@ -11,3 +12,13 @@
         padding: 5px;
 }
 }
+
+@media screen and (max-width: 480px) {
+
+    .host__name {
+      // font-size: 12px;
+      font-size: 0.75em;
+    
+  }
+  
+      }
