@@ -49,7 +49,7 @@ ul, li {
   font-weight: bold;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
   .location-info__location, .error-section__redirection {
     font-size: 0.875em;
   }
@@ -130,8 +130,8 @@ ul, li {
 }
 
 .banner__motto {
-  position: absolute;
   color: white;
+  padding: 20px;
 }
 
 .footer {
@@ -208,7 +208,7 @@ ul, li {
   width: 100%;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 950px) {
   .location {
     margin: 20px;
   }
@@ -268,7 +268,7 @@ ul, li {
   margin-bottom: 45px;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 950px) {
   .about-box {
     margin: 20px;
   }
@@ -276,6 +276,8 @@ ul, li {
 
 .error-section {
   position: relative;
+  margin: 100px;
+  margin-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,14 +291,14 @@ ul, li {
   text-align: center;
   color: #ff6060;
   height: 80vh;
-  width: 100%;
+  width: auto;
 }
 
 .error-section__message {
-  position: absolute;
-  padding: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: center;
   width: 100%;
-  top: 50%;
 }
 
 .error-section__redirection:hover {
@@ -420,7 +422,7 @@ ul, li {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 0.875em;
+  font-size: 0.8em;
   padding: 5px;
   color: white;
 }
@@ -438,7 +440,7 @@ ul, li {
   margin-right: 5px;
   margin-block: 5px;
   padding: 5px;
-  width: 115px;
+  width: 150px;
   height: 25px;
   border-radius: 10px;
   background-color: #ff6060;
@@ -447,7 +449,7 @@ ul, li {
 
 @media screen and (max-width: 480px) {
   .tag {
-    width: 84px;
+    width: 95px;
     height: 18px;
     font-size: 0.625em;
   }
@@ -481,6 +483,7 @@ ul, li {
 
 @media screen and (max-width: 480px) {
   .host__name {
+    padding: 10px;
     font-size: 0.75em;
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Carousel from "../Carousel";
 import Description from "../Description";
@@ -10,14 +10,15 @@ function Location() {
   const activeLocation = datas.filter(function (location) {
     return location.id === id;
   });
-  
 
   const navigate = useNavigate();
-  if (activeLocation === undefined) {
-    navigate("/error")
-  }
 
-  console.log(activeLocation)
+  useEffect(() => {
+    if (activeLocation.length === 0) {
+      navigate("/error");
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="location">
